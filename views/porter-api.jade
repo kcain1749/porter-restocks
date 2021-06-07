@@ -1,0 +1,50 @@
+html
+    head
+        - var price = function(i){
+        -   return Math.round(i/100);
+        - };
+
+
+        style.
+            a {
+                display: inline-block;
+                margin-left: 10px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                }
+
+             .product {
+                 display: inline-block;
+                 width: 300px;
+                 margin-right: 20px;
+                 margin-bottom: 20px;
+             }
+
+             .img-container img {
+                 width: 200px;
+             }
+
+             .discount-70 {
+                background-color: yellow;
+             }
+
+             .discount-80 {
+                background-color: yellowgreen;
+             }
+
+
+
+    body
+        h1 Mr Porter Restocks
+        h2 Tracking #{itemCount} Items
+        h3 Last Refresh: #{latestRefresh}
+        h3 last Push: #{latestPush}
+        h3 Max Percent: #{maxPercent}
+
+        each val in latestRestocks
+            div.product
+                div.img-container
+                    img(src="https://cache.mrporter.com/variants/images/" + val.partNumber + "/in/w560_q80.jpg")
+                div.name-container(class="discount-#{ price(val.price.discount.amount) }")
+                    a(href="https://www.mrporter.com/en-us/mens/product" + val.seo.seoURLKeyword, target="_blank") #{val.designerName} - #{val.name} : #{price(val.price.discount.amount)}% : $#{price(val.price.sellingPrice.amount)}
+

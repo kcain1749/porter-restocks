@@ -1,0 +1,18 @@
+{
+  "name": "porter-restock",
+  "version": "0.0.1",
+  "description": "buy buy buy",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kelly Cain",
+  "license": "ISC",
+  "dependencies": {
+    "bluebird": "^2.9.24",
+    "express": "^4.12.3",
+    "jade": "^1.9.2",
+    "lodash": "^4.0.0",
+    "request": "^2.58.0"
+  }
+}
