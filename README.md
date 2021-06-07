@@ -22,3 +22,6 @@ It would probably be smart to change the `cookie` and maybe other headers to you
 ## Updating
 
 This codebase started more than 5 years ago, feel free to open a PR to move to fetch, ES6, and anything that will make this more readable/up to date
+
+
+There are also probably ways to make sure an item coming back is actually a restock, is actually in stock, and some other API to watch specific items go back in stock
