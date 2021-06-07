@@ -16,6 +16,9 @@ These are all unexplained bugs in the Mr. Porter API itself, products will drop 
 * `node index.js`
 * `http://localhost:3000/porter-restock`
 
+It would probably be smart to change the `cookie` and maybe other headers to your own
+
+
 ## Updating
 
 This codebase started more than 5 years ago, feel free to open a PR to move to fetch, ES6, and anything that will make this more readable/up to date
